@@ -9,26 +9,17 @@
 /* General Styling */
 body {
     margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+    padding: 0px 130px;
     background-color: rgba(245, 248, 255, 1);
 }
-
-.container {
-    max-width: 1200px;
+.hero-section {
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 30px;
-}
-.logo img {
-    width: 100px;
-    height: 62px; /* Adjust as needed */
-    margin-right: 10px;
 }
 
-/* Header Styling */
+/* Header Style */
 .header {
     padding: 20px 0;
-    margin: 10px 80px;
 }
 
 .header .container {
@@ -37,10 +28,15 @@ body {
     align-items: center;
 }
 
+/* Logo style*/
+.logo img {
+    width: 100px;
+    height: 62px; /* Adjust as needed */
+}
+
+/* NavBar style */
 .nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     align-items: center;
 }
@@ -51,70 +47,70 @@ body {
 
 .nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: #8987A1;
     font-weight: 500;
     transition: color 0.3s ease;
     display: flex;
     align-items: center;
 }
 
-.nav ul li a:hover,
+.nav ul li a:hover{
+    color: #ff6f61;
+}
 .nav ul li a.active {
-    color: #ff6f61; /* Example accent color, adjust to your brand color */
+    color: #252432; 
+    font-weight: 900;
+}
+.nav ul li a.cart {
+    color: #000000; 
+    font-weight: 400;
 }
 
-.nav ul li a img {
-    height: 20px; /* Adjust as needed */
-    margin-right: 5px;
+.nav ul li a.active:hover {
+    color: #ff6f61;
 }
 
-/* Hero Section Styling */
+.nav ul li a.cart:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section Style */
 .hero-section {
-    padding: 80px 0;
-    /* background-color: #ffffff; */
+    padding: 30px 0;
 }
 
-.hero-section .container {
+.hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-}
-
-.hero-content {
-    flex: 1;
 }
 
 .hero-content h1 {
-    font-size: 60px;
+    font-size: 56px;
     font-weight: bold;
-    color: #333;
-    line-height: 1.1;
-    margin-bottom: 20px;
+    color: #000000;
+    line-height: 1.4;
 }
 
-.hero-content .orange-text {
-    color: #ff6f61; /* Matches the orange in the image */
+.orange-text {
+    color: #ff6f61; 
 }
 
 .hero-content p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
     max-width: 500px;
 }
 
 .hero-image {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hero-image img {
-    max-width: 100%;
+    max-width: 550px;
     height: auto;
-    border-radius: 8px; /* Optional: if you want rounded corners on the image */
 }
 
 /* Responsive Design (Basic) */
@@ -153,3 +149,75 @@ body {
         font-size: 35px;
     }
 }
+
+/* --- Our Plants Section Style --- */
+.our-plants-section {
+    padding: 60px 0 80px 0; 
+    text-align: center; 
+}
+
+.section-title {
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 10px;
+    padding-bottom: 10px; 
+}
+
+.section-description {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 670px;
+    margin: 0 auto 50px auto; 
+    line-height: 1.6;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    justify-content: center; 
+}
+
+.product-card {
+    padding: 5px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 0px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    color: #111111; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    padding: 12px 70px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #67211a;
+}
+
+

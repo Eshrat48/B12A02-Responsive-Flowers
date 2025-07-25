@@ -113,8 +113,8 @@
 
 ## 🔗 What to Submit
 
-- 📂 **GitHub Repository:**
-- 🌐 **Live Link:**
+- 📂 **GitHub Repository:** https://github.com/Eshrat48/B12A02-Responsive-Flowers.git
+- 🌐 **Live Link:** https://eshrat48.github.io/B12A02-Responsive-Flowers/
 
 ---
 
